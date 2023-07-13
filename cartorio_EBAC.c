@@ -147,7 +147,8 @@ int main () //sempre que for iniciar uma função, deve colotar os parenteses depo
 		printf("Escolha a opção desejada no menu abaixo:\n\n"); //o barra N é para dar um enter
 		printf("\t1 - Novo cadastro\n"); //o barra T é para dar um espaçamento tipo um tab
 		printf("\t2 - Consultar banco de dados\n");
-		printf("\t3 - Deletar cadastro\n\n"); 
+		printf("\t3 - Deletar cadastro\n"); 
+		printf("\t4 - Sair do sistema\n\n");
 		printf("Opção:"); //fim do menu de opções
 	
 		scanf("%d", &opcao); //o comando SCANF serve para armazenar a escolha do usuário dentro da variavel, possui diversas poncentagens e caracteres, depende da necessidade, o & serve para definir em qual variavel será armazenada a esolha do usuário, ela foi colocada la em cima já **olhar no material para saber qual usar em outros casos
@@ -167,7 +168,12 @@ int main () //sempre que for iniciar uma função, deve colotar os parenteses depo
 			case 3:
 			deletar();
 			break;
-					
+				
+			case 4:
+			printf("Obrigado por utilizar o sistema!\n");
+			return 0;
+			break;
+			
 			default: 
 			printf("Essa opção não está disponível, revise o menu de opções!\n");
 			system("pause");
